@@ -27,7 +27,7 @@ onMounted(loadData)
 
 <template lang="">
   <div class="container">
-    <h1 class="fs-1">Products</h1>
+    <h1 class="text-5xl text-blue-900 font-bold">Products</h1>
     <div class="row">
       <div v-if="data.product.length">
         <div class="col-lg-3" v-for="item in data.product" >
