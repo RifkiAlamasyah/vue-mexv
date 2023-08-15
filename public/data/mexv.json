@@ -1,0 +1,126 @@
+{
+    "product": [
+        {
+            "kode_barang": "bluedra_1",
+            "nama": "Mexv Blue Dragon",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Soft Parasut",
+            "sablon"    : "DTF",
+            "type"       :"Coach Jacket",
+            "size"         : ["L", "XL", "XXL"],
+            "harga" : 246600,
+            "diskon" : 0,
+            "gambar": ["mexv_bluedragon_black_s3.jpg","mexv_bluedragon_black_s1.jpg","mexv_bluedragon_black.jpeg","mexv_bluedragon_black_s2.jpg"]
+        },
+        {
+            "kode_barang": "bluedra_2",
+            "nama": "Mexv Blue Dragon",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Soft Parasut",
+            "sablon"    : "DTF",
+            "type"       :"Coach Jacket",
+            "size"         : ["L", "XL", "XXL"],
+            "harga" : 246600,
+            "diskon" : 0,
+            "gambar": ["mexv_bluedragon_silver_s1.jpg","mexv_bluedragon_silver.jpeg","mexv_bluedragon_silver_s2.jpg","mexv_bluedragon_silver_s3.jpg"]
+        },
+        {
+            "kode_barang": "aoda_1",
+            "nama": "Mexv Aoda Swoxic",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Cotton Fleece",
+            "sablon"    : "DTF",
+            "type"       :"Hoodie",
+            "size"         : ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 162000,
+            "diskon" : 0,
+            "gambar": ["mexv_aoda_black1.jpg","mexv_aoda_black.jpg","mexv_aoda_black3.jpg","mexv_aoda_black2.webp"]
+        },
+        {
+            "kode_barang": "aoda_2",
+            "nama": "Mexv Aoda Swoxic",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Cotton Fleece",
+            "sablon"    : "DTF",
+            "type"       :"Hoodie",
+            "size"         :  ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 162000,
+            "diskon" : 0,
+            "gambar": ["mexv_aoda_red_2.jpg","mexv_aoda_red_1.jpg","mexv_aoda_red_3.jpg","mexv_aoda_red_4.jpg"]
+        },
+        {
+            "kode_barang": "aoda_3",
+            "nama": "Mexv Aoda Swoxic",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Cotton Fleece",
+            "sablon"    : "DTF",
+            "type"       :"Hoodie",
+            "size"         :  ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 162000,
+            "diskon" : 0,
+            "gambar": ["mexv_aoda_green_1.png","mexv_aoda_green_2.jpg","mexv_aoda_green_3.jpg","mexv_aoda_green_4.jpg"]
+        },
+        {
+            "kode_barang": "aoda_4",
+            "nama": "Mexv Aoda Swoxic",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Cotton Fleece",
+            "sablon"    : "DTF",
+            "type"       :"Hoodie",
+            "size"         :  ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 162000,
+            "diskon" : 0,
+            "gambar": ["mexv_aoda_silver_1.jpg","mexv_aoda_silver_2.jpg","mexv_aoda_silver_3.jpg","mexv_aoda_silver_4.jpg"]
+        },
+        {
+            "kode_barang": "shini_1",
+            "nama": "Mexv Shinigami",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Cotton Fleece",
+            "sablon"    : "DTF",
+            "type"       :"Crewneck",
+            "size"         : ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 153000,
+            "diskon" : 0,
+            "gambar": ["mexv_crew_black.jpeg","mexv_crew_black_s1.jpeg","mexv_crew_black_s2.jpeg","mexv_crew_black_s3.jpeg"]
+        },
+        {
+            "kode_barang": "shini_2",
+            "nama": "Mexv Shinigami",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Cotton Fleece",
+            "sablon"    : "DTF",
+            "type"       :"Crewneck",
+            "size"         :  ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 153000,
+            "diskon" : 0,
+            "gambar": ["mexv_crew_maroon.jpeg","mexv_crew_maroon_s1.jpeg","mexv_crew_maroon_s2.jpeg","mexv_crew_maroon_s3.jpeg"]
+        },
+        {
+            "kode_barang": "shini_3",
+            "nama": "Mexv Shinigami",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Cotton Fleece",
+            "sablon"    : "DTF",
+            "type"       :"Crewneck",
+            "size"         :  ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 153000,
+            "diskon" : 0,
+            "gambar": ["mexv_crew_green.jpeg","mexv_creww_green_s1.jpeg","mexv_crew_green_s2.jpeg","mexv_crew_green_s3.jpeg"]
+        },
+        {
+            "kode_barang": "shini_4",
+            "nama": "Mexv Shinigami",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Cotton Fleece",
+            "sablon"    : "DTF",
+            "type"       :"Crewneck",
+            "size"         :  ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 153000,
+            "diskon" : 0,
+            "gambar": ["mexv_crew_silver_s1.jpeg","mexv_crew_silver_s2.jpeg","mexv_crew_silver_s3.jpeg","mexv_crew_silver.jpeg"]
+        }
+    ]
+    
+}
+

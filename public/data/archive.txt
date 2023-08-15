@@ -1,0 +1,51 @@
+     {
+            "kode_barang": "crew_1",
+            "type": "Crewneck Mexv Shinigami",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Fleech",
+            "sablon"    : "DTF",
+            "color"       : "Black Charcoal",
+            "size"         :  ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 185000,
+            "diskon" : 0,
+            "gambar": ["mexv_crew_black_s1.jpeg", "mexv_crew_black.jpeg", "mexv_crew_black_s2.jpeg","mexv_crew_black_s3.jpeg"]
+
+        },
+        {
+            "kode_barang": "crew_2",
+            "type": "Crewneck Mexv Shinigami",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Fleech",
+            "sablon"    : "DTF",
+            "color"       : "Green Viper",
+            "size"         :  ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 185000,
+            "diskon" : 0,
+            "gambar": ["mexv_crew_green.jpeg", "mexv_crew_green_s1.jpeg", "mexv_crew_green_s2.jpeg","mexv_crew_green_s3.jpeg"]
+        },
+        {   
+            "kode_barang": "crew_3",
+            "type": "Crewneck Mexv Shinigami",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Fleech",
+            "sablon"    : "DTF",
+            "color"       : "Red Maroon",
+            "size"         : ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 185000,
+            "diskon" : 0,
+            "gambar": ["mexv_crew_maroon.jpeg", "mexv_crew_maroon_s1.jpeg", "mexv_crew_maroon_s2.jpeg","mexv_crew_maroon_s3.jpeg"]
+
+        },
+        {   
+            "kode_barang": "crew_4",
+            "type": "Crewneck Mexv Shinigami",
+            "brand"      : "Megumi Exclusive" ,
+            "material"  : "Fleech",
+            "sablon"    : "DTF",
+            "color"       : "Silver King",
+            "size"         :  ["M", "L", "XL", "XXL","XXXL"],
+            "harga" : 185000,
+            "diskon" : 0,
+            "gambar": ["mexv_crew_silver_s1.jpeg", "mexv_crew_silverk.jpg", "mexv_crew_silver_s2.jpeg","mexv_crew_silver_s3.jpeg"]
+
+        }
