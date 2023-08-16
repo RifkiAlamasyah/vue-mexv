@@ -1,30 +1,43 @@
 <template>
-  <nav class="bg-white shadow-lg">
+  <nav class="bg-white shadow-lg fixed top-0 w-full z-10">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex justify-between">
         <div class="flex space-x-7">
           <div>
             <a href="#" class="flex items-center py-4 px-2">
               <img src="../assets/logo.svg" alt="Logo" class="h-8 w-8 mr-2">
-              <span class="font-semibold text-gray-500 text-lg">Navigation</span>
+              <span class="font-semibold text-gray-500 text-lg">MEXV</span>
             </a>
           </div>
           <div class="hidden md:flex items-center space-x-1">
-            <a href="" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Home</a>
-            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
-            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
-            <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact Us</a>
+            <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+            :class="{ 'text-green-500 border-b-4 border-green-500 font-semibold': isActive('home') }"
+            @click="setActiveLink('home')">Home</a>
+          <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+            :class="{ 'text-green-500 border-b-4 border-green-500 font-semibold': isActive('services') }"
+            @click="setActiveLink('services')">Services</a>
+          <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+            :class="{ 'text-green-500 border-b-4 border-green-500 font-semibold': isActive('about') }"
+            @click="setActiveLink('about')">About</a>
+          <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+            :class="{ 'text-green-500 border-b-4 border-green-500 font-semibold': isActive('contact') }"
+            @click="setActiveLink('contact')">Contact Us</a>
           </div>
         </div>
         <div class="hidden md:flex items-center space-x-3 ">
-          <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
-          <a href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+          <a href=""
+            class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log
+            In</a>
+          <a href=""
+            class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign
+            Up</a>
         </div>
+
+        <!-- Mobile -->
         <div class="md:hidden flex items-center">
           <button class="outline-none mobile-menu-button" @click="toggleMenu">
-            <svg class="w-6 h-6 text-gray-500 hover:text-green-500" :class="{ 'text-green-500': showMenu }"
-                 fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                 stroke="currentColor">
+            <svg class="w-6 h-6 text-gray-500 hover:text-green-500" :class="{ 'text-green-500': showMenu }" fill="none"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
               <path d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
@@ -33,12 +46,27 @@
     </div>
     <div :class="{ 'hidden': !showMenu }" class="mobile-menu">
       <ul class="">
-        <li><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-        <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
-        <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
-        <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+        <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+          :class="{ 'text-white bg-green-500 font-semibold': isActive('home') }"
+          @click="setActiveLink('home')"
+          >Home</a></li>
+        <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+          :class="{ 'text-white bg-green-500 font-semibold': isActive('services') }"
+          @click="setActiveLink('services')"
+          >Services</a>
+        </li>
+        <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+          :class="{ 'text-white bg-green-500 font-semibold': isActive('about') }"
+          @click="setActiveLink('about')"
+          >About</a></li>
+        <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+          :class="{ 'text-white bg-green-500 font-semibold': isActive('contact') }"
+          @click="setActiveLink('contact')"
+          >Contact Us</a>
+        </li>
       </ul>
     </div>
+    <!-- end Mobile -->
   </nav>
 </template>
 
@@ -50,6 +78,15 @@ const showMenu = ref(false);
 
 const toggleMenu = () => {
   showMenu.value = !showMenu.value;
+};
+const activeLink = ref('home'); // Set the initially active link
+
+const isActive = (link) => {
+  return activeLink.value === link;
+};
+
+const setActiveLink = (link) => {
+  activeLink.value = link;
 };
 </script>
 
@@ -67,24 +104,22 @@ const toggleMenu = () => {
   }
 }
 
-@media (min-width: 1000px) { 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+@media (min-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.navbar-brand {
-  margin-bottom: 10px;
-}
+  .navbar-brand {
+    margin-bottom: 10px;
+  }
 
-.navbar-nav {
-  display: flex;
-  justify-content: center;
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+  }
 }
-}
-
-
 </style>
 
 
