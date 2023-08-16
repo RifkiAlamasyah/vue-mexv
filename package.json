@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.15",
+    "@heroicons/vue": "^2.0.18",
     "@popperjs/core": "^2.11.7",
     "autoprefixer": "^10.4.15",
     "postcss": "^8.4.27",
